@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import HealthBar from '../health-bar'
+import Buttons from '../action-buttons/buttons'
 
 const Player = () => {
-    
+
     const [data, setData] = useState({})
 
     const fetchData = () => {
@@ -10,6 +11,7 @@ const Player = () => {
             .then(response => response.json())
             .then(responseData => {
                 setData(responseData)
+                console.log(responseData)
             })
     }
 
@@ -18,11 +20,12 @@ const Player = () => {
     }, [])
 
     return (
-        <>
-       
+        <section id="Player">
+            <h1>{data.name}</h1>
             <HealthBar health="130/130" />
-            <img src={data.sprites?.back_default}></img>
-        </>
+            <img className="pokemon-render pokemon-player" src={data.sprites?.back_default}></img>
+            <Buttons />
+        </section>
     );
 }
 

@@ -1,9 +1,8 @@
 const HealthBar = (props) => {
     return (
-        <>
-            <h3>Health bar</h3>
-            <p>{props.health}</p>
-        </>
+        <div>
+            <p>HP: {props.health}</p>
+        </div>
     );
 }
 

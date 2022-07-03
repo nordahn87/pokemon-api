@@ -1,0 +1,27 @@
+@use 'reset';
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+button + button {
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+.pokemon-render {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-pixelated;
+    image-rendering: pixelated;
+}
+
+.pokemon-player {
+    width: 300px;
+}
+.pokemon-opponent {
+    width: 300px;
+}

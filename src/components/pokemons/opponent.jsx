@@ -18,11 +18,11 @@ const Opponent = () => {
     }, [])
 
     return (
-        <>
-            <h2>{data.forms[0?.name]}</h2>
+        <section id="Opponent">
+            <h2>{data.name}</h2>
             <HealthBar health="122/122" />
-            <img src={data.sprites?.front_default}></img>
-        </>
+            <img className="pokemon-render pokemon-opponent" src={data.sprites?.front_default}></img>
+        </section>
     );
 }
 

@@ -1,12 +1,13 @@
 import Player from './components/pokemons/player.jsx'
 import Opponent from './components/pokemons/opponent.jsx'
+import './'
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
      <Player />
      <Opponent />
-    </div>
+    </main>
   );
 }
 
