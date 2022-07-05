@@ -19,6 +19,10 @@ button {
     image-rendering: pixelated;
 }
 
+.pokemon-name {
+    text-transform: capitalize; 
+}
+
 .pokemon-player {
     width: 300px;
 }

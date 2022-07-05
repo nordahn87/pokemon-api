@@ -11,7 +11,6 @@ const Player = () => {
             .then(response => response.json())
             .then(responseData => {
                 setData(responseData)
-                console.log(responseData)
             })
     }
 
@@ -21,7 +20,7 @@ const Player = () => {
 
     return (
         <section id="Player">
-            <h1>{data.name}</h1>
+            <h1 className="pokemon-name">{data.name}</h1>
             <HealthBar health="130/130" />
             <img className="pokemon-render pokemon-player" src={data.sprites?.back_default}></img>
             <Buttons />
